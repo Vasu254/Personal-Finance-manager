@@ -1,0 +1,138 @@
+/* Finance-themed background and form styles for Register page */
+.auth-bg {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-container {
+  background: #181818;
+  max-width: 600px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+}
+.auth-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.auth-form input {
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  background: #222;
+  color: #fff;
+  transition: border 0.2s;
+}
+.auth-form input:focus {
+  border: 1.5px solid #fff;
+  outline: none;
+}
+.auth-form button {
+  padding: 0.8rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.auth-form button:hover {
+  background: #222;
+  color: #fff;
+}
+.error-message {
+  color: #ff5252;
+  margin-top: 1.2rem;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+.success-message {
+  color: #22bb33;
+  margin-top: 1.2rem;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+.switch-link {
+  margin-top: 1.3rem;
+  font-size: 1.01rem;
+  color: #fff;
+}
+.switch-action {
+  color: #22bb33;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.2rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.switch-action:hover {
+  color: #fff;
+}
+.row-fields {
+  display: flex;
+  gap: 0.7rem;
+  width: 100%;
+}
+.row-fields input {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  background: #222;
+  color: #fff;
+  transition: border 0.2s;
+}
+.row-fields input:focus {
+  border: 1.5px solid #fff;
+  outline: none;
+}
+.show-password-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.98rem;
+  margin-bottom: 0.2rem;
+  margin-top: -0.7rem;
+}
+@media (max-width: 600px) {
+  .auth-bg {
+    padding: 0 0.5rem;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .auth-container {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    min-width: 0;
+  }
+  .row-fields {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .row-fields input {
+    min-width: 0;
+    width: 100%;
+  }
+}
